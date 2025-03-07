@@ -1,13 +1,15 @@
-class container():
-    def __init__(self, nom, pv, force, intelligence, endurance, mana):
+class Personnage():
+    def __init__(self, nom, pv, force, intelligence):
         self.nom = nom
         self.pv = pv
         self.force = force
         self.intelligence = intelligence
-        self.endurance = endurance
-        self.mana = mana
 
-    def attaque(self, cible, force):
+class PeutFrapper():
+    def __init__(self, endurance):
+        self.endurance = endurance
+
+    def frapper(self, cible,  force):
         if self.endurance > force:
             degats = self.force
             self.endurance -= force/2
@@ -17,6 +19,9 @@ class container():
             print(f"{self.nom} n'a plus d'endurance pour frapper.")
             return 0
 
+class PeutJeterUnSort():
+    def __init__(self, mana):
+        self.mana = mana
     def jeterunsort(self, cible, force):
         if self.mana > force:
             degats = self.force
