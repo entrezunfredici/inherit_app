@@ -6,11 +6,23 @@ ingrédients = {
     "Reine": [
         "sauce tomate",
         "champignons",
-        "jambon"
+        "jambon",
+        "fromage rappé"
     ],
     "Chorizo": [
         "sauce tomate",
-        "Chorizo"
+        "Chorizo",
+        "fromage rapé",
+        "origan",
+        "poivron",
+        "champignons",
+        "mozzarella",
+        "crème liquide",
+        "basillic"
+    ],
+    "Regina": [
+        "jambon",
+        "champignon"
     ]
 }
 
