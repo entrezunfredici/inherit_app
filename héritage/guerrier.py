@@ -1,4 +1,4 @@
-from personnage import Personnage
+from inherit_app.héritage.personnage import Personnage
 
 class Guerrier(Personnage):
     def __init__(self, nom, pv, force, intelligence, endurance, mana):
