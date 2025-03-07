@@ -1,8 +1,5 @@
-from inherit_app.compo.container import Container
+from inherit_app.compo.container import Personnage, PeutFrapper
 
-class Guerrier(Container):
-    def __init__(self, nom, pv, force, intelligence, endurance, mana):
-        super().__init__(nom, pv, force, intelligence, endurance, mana)
-
-    Container.__init__()
-    self.frapper(cible, force)
+class Guerrier(Personnage):
+    def __init__(self, nom, pv, force, intelligence):
+        super().__init__(nom, pv, force, intelligence)
