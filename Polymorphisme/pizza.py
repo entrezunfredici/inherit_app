@@ -1,9 +1,9 @@
 class Pizza:
-    def __init__(self, nom, client, ingrédients, cuit):
+    def __init__(self, pâte, nom, ingrédients, cuit):
         self.name = nom
-        self.client = client
         self.ingrédients = ingrédients
         self.cuit = cuit
+        self.pâte = pâte
 
     def cuire(self):
         if self.cuit:
